@@ -234,14 +234,23 @@
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Projects Section -->
         <section id="projects" class="py-24 border-b border-slate-100">
-            <div class="flex justify-between items-end mb-12">
-                <h2 class="text-3xl font-bold">Featured Projects</h2>
-                <a href="https://github.com/yaseemarusiru" target="_blank" class="text-blue-600 font-semibold hover:underline text-sm">View GitHub Repositories →</a>
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Technical Projects</h2>
+                    <p class="text-slate-500">A collection of research, software, and hardware engineering work.</p>
+                </div>
+                <a href="https://github.com/yaseemarusiru" target="_blank" class="text-blue-600 font-semibold hover:underline text-sm flex items-center">
+                    Browse more on GitHub 
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
             </div>
 
-            <div class="project-card p-6 rounded-2xl bg-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Research Project -->
+                <div class="project-card p-6 rounded-2xl bg-white">
                     <div class="mb-4">
                         <span class="text-[10px] font-bold px-2 py-1 bg-purple-100 text-purple-700 rounded uppercase tracking-wider">Research</span>
                     </div>
@@ -255,8 +264,8 @@
                         <span class="text-[10px] font-mono text-slate-500">MedMNIST</span>
                     </div>
                 </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Web App Project -->
                 <div class="project-card p-6 rounded-2xl bg-white">
                     <div class="mb-4">
                         <span class="text-[10px] font-bold px-2 py-1 bg-green-100 text-green-700 rounded uppercase tracking-wider">Full Stack</span>
@@ -287,6 +296,7 @@
                     </div>
                 </div>
 
+                <!-- Hardware Project 2 -->
                 <div class="project-card p-6 rounded-2xl bg-white">
                     <div class="mb-4">
                         <span class="text-[10px] font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded uppercase tracking-wider">Hardware</span>
@@ -300,6 +310,37 @@
                         <span class="text-[10px] font-mono text-slate-500">Protection Circuits</span>
                     </div>
                 </div>
+
+                <!-- Comm Project -->
+                <div class="project-card p-6 rounded-2xl bg-white">
+                    <div class="mb-4">
+                        <span class="text-[10px] font-bold px-2 py-1 bg-orange-100 text-orange-700 rounded uppercase tracking-wider">Telecom</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-slate-900">Communication System Design</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">
+                        End-to-end communication system including transmitter, receiver, and channel model. Built and simulated using MATLAB.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-[10px] font-mono text-slate-500">MATLAB</span>
+                        <span class="text-[10px] font-mono text-slate-500">DSP</span>
+                    </div>
+                </div>
+
+                <!-- IoT Project -->
+                <div class="project-card p-6 rounded-2xl bg-white">
+                    <div class="mb-4">
+                        <span class="text-[10px] font-bold px-2 py-1 bg-red-100 text-red-700 rounded uppercase tracking-wider">Embedded</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-slate-900">Arm Microcontroller Project</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">
+                        Developed firmware for ARM-based microcontrollers involving peripheral interfacing and real-time processing tasks.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-[10px] font-mono text-slate-500">Embedded C</span>
+                        <span class="text-[10px] font-mono text-slate-500">ARM Cortex</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
