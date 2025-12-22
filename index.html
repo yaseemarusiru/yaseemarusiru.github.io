@@ -11,6 +11,7 @@
             --primary: #0f172a;
             --accent: #2563eb;
             --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
             --slate-200: #e2e8f0;
             --slate-600: #475569;
         }
@@ -48,6 +49,16 @@
             background: var(--slate-50);
         }
 
+        .award-card {
+            border: 1px solid var(--slate-100);
+            background: #ffffff;
+            transition: all 0.2s ease;
+        }
+        .award-card:hover {
+            border-color: var(--accent);
+            background: var(--slate-50);
+        }
+
         .project-grid-item {
             border: 1px solid var(--slate-200);
             transition: transform 0.2s, box-shadow 0.2s;
@@ -69,11 +80,11 @@
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="font-bold text-xl tracking-tighter">YASEEMA<span class="text-blue-600"> RUSIRU</span></div>
-            <div class="hidden md:flex space-x-8">
+            <div class="hidden md:flex space-x-8 text-sm">
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#awards" class="nav-link">Honors & Awards</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href="#contact" class="nav-link">Contact</a>
             </div>
             <a href="mailto:yaseemarusiru@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">Get in Touch</a>
         </div>
@@ -84,12 +95,12 @@
         <!-- Hero Section -->
         <section class="pt-40 pb-24 border-b border-slate-100">
             <div class="max-w-3xl">
-                <span class="mono text-blue-600 font-semibold tracking-widest text-sm uppercase mb-4 block"></span>
-                <h1 class="hero-text text-6xl font-extrabold tracking-tight mb-6 text-slate-900 leading-[1.1]">
-                     <span class="text-blue-600">Yaseema Rusiru Ariyarathna Epa</span>
+                <span class="mono text-blue-600 font-semibold tracking-widest text-sm uppercase mb-4 block">Electronic & Telecommunication Engineer</span>
+                <h1 class="hero-text text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-slate-900 leading-[1.1]">
+                    <span class="text-blue-600">Yaseema Rusiru Ariyarathna Epa</span>
                 </h1>
                 <p class="text-xl text-slate-600 mb-10 leading-relaxed">
-                    Undergraduate at the Department of Electronic and Telecommuniction Engineering, University of Moratuwa. 
+                    Undergraduate at the Department of Electronic and Telecommunication Engineering, University of Moratuwa. Specializing in AI Engineering and Intelligent System Design.
                 </p>
                 <div class="flex flex-wrap gap-8">
                     <div>
@@ -97,19 +108,27 @@
                         <span class="text-sm mono text-slate-500 uppercase">CGPA / 4.0</span>
                     </div>
                     <div class="w-px h-12 bg-slate-200"></div>
-
+                    <div>
+                        <span class="block text-3xl font-bold text-slate-900">77</span>
+                        <span class="text-sm mono text-slate-500 uppercase">Island Rank (A/L)</span>
+                    </div>
+                    <div class="w-px h-12 bg-slate-200"></div>
+                    <div>
+                        <span class="block text-3xl font-bold text-slate-900">5x</span>
+                        <span class="text-sm mono text-slate-500 uppercase">Dean's List</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="py-24">
+        <section id="experience" class="py-24 border-b border-slate-100">
             <h2 class="text-3xl font-bold mb-12">Professional Experience</h2>
             <div class="space-y-12">
                 <div class="experience-card p-8 rounded-r-xl">
                     <div class="flex flex-col md:flex-row justify-between mb-4">
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900">Intern AI Engineer</h3>
+                            <h3 class="text-xl font-bold text-slate-900">Intern AI Engineering</h3>
                             <p class="text-blue-600 font-semibold">Singapore University of Technology and Design (SUTD)</p>
                         </div>
                         <span class="text-slate-500 font-medium">Dec 2024 — June 2025</span>
@@ -121,19 +140,57 @@
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-600 mr-2">▹</span>
-                            Optimized AI reliability by evaluating model performance under adversarial data conditions.
+                            Built scalable data analysis workflows and evaluated their impact on model reliability.
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-600 mr-2">▹</span>
-                            Automated large-scale dataset analysis workflows using Python and PyTorch.
+                            Utilized PyTorch and Python for high-performance AI model evaluation.
                         </li>
                     </ul>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-badge">PyTorch</span>
                         <span class="skill-badge">Vision Models</span>
-                        <span class="skill-badge">Automation</span>
+                        <span class="skill-badge">Data Engineering</span>
                         <span class="skill-badge">Python</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honors & Awards Section -->
+        <section id="awards" class="py-24 border-b border-slate-100">
+            <h2 class="text-3xl font-bold mb-12">Honors & Awards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="award-card p-6 rounded-xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-slate-900">Third Place — All Island Mathematics Quiz</h3>
+                        <span class="mono text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">2019</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Senior - II Category. Competition organized by Sanghamiththa Girls' College, Galle.</p>
+                </div>
+
+                <div class="award-card p-6 rounded-xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-slate-900">Finalist — SHE-TECH V2.0 Hackathon</h3>
+                        <span class="mono text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">2024</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Programming competition organized by the IEEE WIE Affinity Group of SLTC.</p>
+                </div>
+
+                <div class="award-card p-6 rounded-xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-slate-900">WiDS Datathon Participant</h3>
+                        <span class="mono text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">2024</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Successfully participated in the Women in Data Science Datathon Challenge 1.</p>
+                </div>
+
+                <div class="award-card p-6 rounded-xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-slate-900">Dean's List Awardee (5 Semesters)</h3>
+                        <span class="mono text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">2022-2024</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Recognized for academic excellence in Semesters 1, 2, 4, 5, and 6 at University of Moratuwa.</p>
                 </div>
             </div>
         </section>
@@ -145,7 +202,6 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div>
                         <h4 class="font-bold text-slate-900 mb-6 flex items-center">
-                            <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                             Programming
                         </h4>
                         <div class="flex flex-wrap gap-2">
@@ -156,23 +212,20 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-slate-900 mb-6 flex items-center">
-                            <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
                             Hardware & IoT
                         </h4>
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-badge">Altium Designer</span> <span class="skill-badge">SOLIDWORKS</span>
-                            <span class="skill-badge">NodeRED</span> <span class="skill-badge">Embedded C</span>
-                            <span class="skill-badge">PCB Design</span>
+                            <span class="skill-badge">NodeRED</span> <span class="skill-badge">PCB Design</span>
                         </div>
                     </div>
                     <div>
                         <h4 class="font-bold text-slate-900 mb-6 flex items-center">
-                            <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                             Frameworks
                         </h4>
                         <div class="flex flex-wrap gap-2">
                             <span class="skill-badge">Spring Boot</span> <span class="skill-badge">React</span>
-                            <span class="skill-badge">MySQL</span> <span class="skill-badge">Git</span>
+                            <span class="skill-badge">MySQL</span> <span class="skill-badge">PyTorch</span>
                             <span class="skill-badge">Penny Lane</span>
                         </div>
                     </div>
@@ -180,93 +233,71 @@
             </div>
         </section>
 
-        <!-- Industry-Ready Projects -->
-        <section id="projects" class="py-24">
+        <!-- Projects -->
+        <section id="projects" class="py-24 border-b border-slate-100">
             <div class="flex justify-between items-end mb-12">
                 <h2 class="text-3xl font-bold">Featured Projects</h2>
-                <a href="https://github.com/yaseemarusiru" target="_blank" class="text-blue-600 font-semibold hover:underline">View GitHub →</a>
+                <a href="https://github.com/yaseemarusiru" target="_blank" class="text-blue-600 font-semibold hover:underline text-sm">View GitHub Repositories →</a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
                 <div class="project-grid-item p-8 rounded-2xl">
                     <h3 class="text-xl font-bold mb-3">Multi-Turn Absolute Magnetic Encoder</h3>
-                    <p class="text-slate-600 mb-6">Designed an industrial-grade battery-powered encoder for shaft angle measurement. Implemented a 4-layer PCB in Altium with optimized power consumption.</p>
+                    <p class="text-slate-600 mb-6">Industrial-grade battery-powered shaft angle measurement system. High-precision sensor integration with custom PCB.</p>
                     <div class="flex gap-2">
-                        <span class="text-xs font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded uppercase">Hardware</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-700 rounded uppercase">Industrial</span>
+                        <span class="text-[10px] font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded uppercase">Altium</span>
+                        <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-700 rounded uppercase">Embedded</span>
                     </div>
                 </div>
-
                 <div class="project-grid-item p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold mb-3">Oversight: Transformer Inspection Web App</h3>
-                    <p class="text-slate-600 mb-6">Full-stack asset management system for industrial inspections. Built with a React/Vite frontend and a robust Spring Boot/MySQL backend.</p>
+                    <h3 class="text-xl font-bold mb-3">Oversight Management System</h3>
+                    <p class="text-slate-600 mb-6">Full-stack transformer inspection application. Managed the lifecycle from database schema to frontend UI.</p>
                     <div class="flex gap-2">
-                        <span class="text-xs font-bold px-2 py-1 bg-green-100 text-green-700 rounded uppercase">Full Stack</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-700 rounded uppercase">Web</span>
+                        <span class="text-[10px] font-bold px-2 py-1 bg-green-100 text-green-700 rounded uppercase">Spring Boot</span>
+                        <span class="text-[10px] font-bold px-2 py-1 bg-slate-100 text-slate-700 rounded uppercase">React</span>
                     </div>
                 </div>
-
-                <div class="project-grid-item p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold mb-3">Quantum Hybrid Image Classification</h3>
-                    <p class="text-slate-600 mb-6">Analyzing label noise robustness in medical image datasets (MedMNIST) using Penny Lane and PyTorch architectures.</p>
-                    <div class="flex gap-2">
-                        <span class="text-xs font-bold px-2 py-1 bg-purple-100 text-purple-700 rounded uppercase">AI Research</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-700 rounded uppercase">Medical Tech</span>
-                    </div>
-                </div>
-
-                <div class="project-grid-item p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold mb-3">100W Linear Power Supply</h3>
-                    <p class="text-slate-600 mb-6">High-current (10A) power supply with integrated over-current protection and short-circuit monitoring.</p>
-                    <div class="flex gap-2">
-                        <span class="text-xs font-bold px-2 py-1 bg-red-100 text-red-700 rounded uppercase">Power Electronics</span>
-                        <span class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-700 rounded uppercase">Control</span>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         <!-- Volunteer & Leadership -->
-        <section class="py-24 border-t border-slate-100">
-            <h2 class="text-3xl font-bold mb-12">Leadership & Volunteer Experience</h2>
+        <section class="py-24 border-b border-slate-100">
+            <h2 class="text-3xl font-bold mb-12">Leadership</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-2">IEEE ComSoc Chapter</h4>
-                    <p class="text-blue-600 text-sm mono mb-3">Webmaster (24/25)</p>
-                    <p class="text-sm text-slate-600">Managing web presence and digital outreach for the Communications Society student chapter.</p>
+                    <h4 class="font-bold text-slate-900 mb-1">Electronic Club (UoM)</h4>
+                    <p class="text-blue-600 text-xs mono mb-3 uppercase">External Relationship Manager</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Coordinating industry partnerships and collaborative initiatives for the Electronic Club main branch.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-2">Electronic Club (UoM)</h4>
-                    <p class="text-blue-600 text-sm mono mb-3">Relationship Manager</p>
-                    <p class="text-sm text-slate-600">Coordinating industry partnerships and external relations for the main branch.</p>
+                    <h4 class="font-bold text-slate-900 mb-1">IEEE ComSoc Chapter</h4>
+                    <p class="text-blue-600 text-xs mono mb-3 uppercase">Webmaster (24/25)</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Overseeing the technical management and digital presence of the IEEE Communications Society Chapter.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-slate-900 mb-2">IEEE Student Branch</h4>
-                    <p class="text-blue-600 text-sm mono mb-3">Volunteer Management</p>
-                    <p class="text-sm text-slate-600">Handled coordination for the Student Branch during the 22/23 term.</p>
+                    <h4 class="font-bold text-slate-900 mb-1">IEEE Student Branch</h4>
+                    <p class="text-blue-600 text-xs mono mb-3 uppercase">Volunteer Management</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Served in the management team, organizing high-impact student events and outreach programs.</p>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-24 bg-slate-900 -mx-6 px-6 text-white text-center">
-
+        <section id="contact" class="py-24 bg-slate-900 -mx-6 px-6 text-white text-center rounded-t-[3rem]">
+        
             <div class="flex flex-wrap justify-center gap-6 mb-12">
-                <a href="mailto:yaseemarusiru@gmail.com" class="px-6 py-3 bg-white text-slate-900 rounded-lg font-bold hover:bg-blue-50 transition">Email Me</a>
-                <a href="https://linkedin.com/in/yaseema-rusiru" target="_blank" class="px-6 py-3 border border-white/20 rounded-lg font-bold hover:bg-white/10 transition">LinkedIn</a>
+                <a href="mailto:yaseemarusiru@gmail.com" class="px-8 py-3 bg-white text-slate-900 rounded-lg font-bold hover:bg-blue-50 transition">Email Me</a>
+                <a href="https://linkedin.com/in/yaseema-rusiru" target="_blank" class="px-8 py-3 border border-white/20 rounded-lg font-bold hover:bg-white/10 transition">LinkedIn</a>
             </div>
-            <p class="text-slate-500 text-sm mono">Moratuwa, Sri Lanka — (+94) 70 245 0125</p>
+            <p class="text-slate-500 text-sm mono">Galle, Sri Lanka — (+94) 70 245 0126</p>
         </section>
 
     </main>
 
-    <footer class="py-12 text-center text-slate-400 text-sm border-t border-slate-100">
-        © 2025 Yaseema Epa. Built with HTML & Tailwind.
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        © 2025 Yaseema Rusiru Ariyarathna Epa
     </footer>
 
     <script>
-        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
